@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nova — Modern SaaS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container">
+      <div class="brand">Nova</div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="btn">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container grid-2">
+      <div>
+        <h1>Launch faster with a clean landing page</h1>
+        <p>Beautiful, responsive, and lightweight — perfect for hackathons and demos.</p>
+        <div class="actions">
+          <a class="btn primary" href="#pricing">Try Free</a>
+          <a class="btn" href="#features">See Features</a>
+        </div>
+      </div>
+      <img src="assets/hero.jpg" alt="Product preview" class="hero-img">
+    </div>
+  </section>
+
+  <section id="features" class="features container">
+    <h2>Features</h2>
+    <div class="cards">
+      <div class="card"><h3>🚀 Fast</h3><p>Optimized assets and no frameworks.</p></div>
+      <div class="card"><h3>🧩 Modular</h3><p>Reusable components with simple CSS.</p></div>
+      <div class="card"><h3>🔒 Secure</h3><p>No dependencies, fewer vulnerabilities.</p></div>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <h2>Simple Pricing</h2>
+      <div class="plans">
+        <div class="plan">
+          <h3>Starter</h3>
+          <p class="price">₹0</p>
+          <ul><li>Basic templates</li><li>Email support</li></ul>
+          <button class="btn primary" onclick="selectPlan('Starter')">Choose</button>
+        </div>
+        <div class="plan popular">
+          <h3>Pro</h3>
+          <p class="price">₹499/mo</p>
+          <ul><li>All templates</li><li>Priority support</li></ul>
+          <button class="btn primary" onclick="selectPlan('Pro')">Choose</button>
+        </div>
+        <div class="plan">
+          <h3>Teams</h3>
+          <p class="price">₹999/mo</p>
+          <ul><li>Team dashboard</li><li>Admin tools</li></ul>
+          <button class="btn primary" onclick="selectPlan('Teams')">Choose</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact container">
+    <h2>Contact Us</h2>
+    <form onsubmit="return submitForm(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" rows="4" required></textarea>
+      <button class="btn primary">Send</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="container">© <span id="y"></span> Nova Inc.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
